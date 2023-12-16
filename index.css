@@ -80,3 +80,11 @@ body{
   font-size: medium;
   color: gray;
 }
+.settings + p{
+  opacity: 0;
+  height: 0px;
+}
+.settings.failed+p{
+  opacity: 1;
+  height: auto;
+}

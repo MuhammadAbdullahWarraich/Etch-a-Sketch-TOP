@@ -40,6 +40,10 @@ function addHoverEffect(){
     const inputField = (document.querySelector("#inputboxcount"));
     if (inputField.value !== "" && Number.isInteger(Math.sqrt(inputField.value))){
         makeBoxes(inputField.value);
+        (document.querySelector(".settings")).classList.remove("failed");
+    }
+    else{
+        (document.querySelector(".settings")).classList.add("failed");
     }
     inputField.value = "";
 })
