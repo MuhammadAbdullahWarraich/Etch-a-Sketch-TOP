@@ -1,13 +1,82 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 100vh;
-    background-color: #f1f1f1;
-  }
-#main-container {
-    background-color: #2ecc71;
-    width: 95vh;
-    height: 95vh;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.temp-container {
+  height: 50vh;
+  width: 50vh;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-container {
+  background-color: darkcyan;
+  height: 80vh;
+  margin-top: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.sketchpad-pixel {
+  transition: background-color 0.5s ease;
+}
+.clear, .confirmsize {
+  background-color: gray;
+  color: white;
+  padding: 4px 16px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.confirmsize {
+  background-color: green;
+}
+#boxcountinput{
+  width: 70px;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  color: lightseagreen;
+  font-weight: bold;
+  border: 1px solid darkblue;
+}
+.settings {
+  display: flex;
+  gap: 60px;
+  font-weight: bold;
+  font-size: large;
+}
+.footer {
+  padding: 16px;
+  text-align: center;
+  background-color:#eeeeee;
+  font-weight: bold;
+  font-size: large;
+}
+.all {
+  width: 70vh;
+  height: 100vh;
+}
+.header {
+  font-weight: bold;
+  font-size:xx-large;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+.header a {
+  font-weight: normal;
+  text-decoration: none;
+  font-size: medium;
+  color: gray;
 }
